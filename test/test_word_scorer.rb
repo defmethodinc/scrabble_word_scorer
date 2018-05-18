@@ -13,7 +13,11 @@ class TestWordScorer < Test::Unit::TestCase
 
   def test_word_scorer_initialization
     assert_equal(@word, @word_scorer.word)
+    assert_equal(@word_2, @word_scorer_2.word)
+    assert_equal(@word_3, @word_scorer_3.word)
     assert_equal(0, @word_scorer.score)
+    assert_equal(0, @word_scorer_2.score)
+    assert_equal(0, @word_scorer_3.score)
   end
 
   def test_word_scorer_calculate_score
